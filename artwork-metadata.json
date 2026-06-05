@@ -1,0 +1,46 @@
+{
+  "name": "When the Alphabet Becomes Strange: Socrates",
+  "artist": "Avery Lake",
+  "year": "2026",
+  "description": "A 1/1 moving image in which Socrates is reconstructed through binary, letters, and phonetics at the moment when writing begins to answer back.",
+  "external_url": "https://socrates.averylakeofficial.com/",
+  "animation_url": "https://socrates.averylakeofficial.com/assets/video/when-the-alphabet-becomes-strange-socrates.mp4",
+  "image": "https://socrates.averylakeofficial.com/assets/images/when-the-alphabet-becomes-strange-socrates-cover.jpg",
+  "social_image": "https://socrates.averylakeofficial.com/assets/social/when-the-alphabet-becomes-strange-socrates-og.jpg",
+  "media": {
+    "type": "video/mp4",
+    "format": "4:5",
+    "dimensions": "1440 x 1800 px",
+    "duration": "29.6 seconds",
+    "sound": "silent loop"
+  },
+  "edition": {
+    "type": "unique",
+    "size": 1,
+    "number": 1,
+    "minting": "minted upon request"
+  },
+  "attributes": [
+    {
+      "trait_type": "Medium",
+      "value": "Single-channel video"
+    },
+    {
+      "trait_type": "Subject",
+      "value": "Socrates"
+    },
+    {
+      "trait_type": "Material systems",
+      "value": "Binary, letters, phonetics"
+    },
+    {
+      "trait_type": "Conceptual field",
+      "value": "Writing, memory, orality, AI"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "1 of 1"
+    }
+  ],
+  "rights": "All rights reserved. Copyright 2026 The Art of Avery Lake."
+}

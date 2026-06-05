@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>When the Alphabet Becomes Strange: Socrates - Avery Lake</title>
+<meta name="description" content="Two 1/1 moving image studies by Avery Lake. Socrates is reconstructed through binary and alphabet, then squeezed back into the symbols that name him." />
+<meta name="theme-color" content="#050606" />
+<meta name="color-scheme" content="dark light" />
+<meta name="author" content="Avery Lake" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="Avery Lake, Socrates, When the Alphabet Becomes Strange, AI art, digital art, moving image, orality, writing, memory, language, compression" />
+<link rel="canonical" href="https://socrates.averylakeofficial.com/" />
+<link rel="alternate" type="application/json" href="artwork-metadata.json" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="favicon.ico" sizes="any" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Avery Lake" />
+<meta property="og:url" content="https://socrates.averylakeofficial.com/" />
+<meta property="og:title" content="When the Alphabet Becomes Strange: Socrates - Avery Lake" />
+<meta property="og:description" content="Two 1/1 moving image studies. Socrates reconstructed through binary and alphabet, then squeezed back into the symbols that name him." />
+<meta property="og:image" content="https://socrates.averylakeofficial.com/assets/social/when-the-alphabet-becomes-strange-socrates-og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Socrates reconstructed through alphabetic marks in When the Alphabet Becomes Strange by Avery Lake." />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="When the Alphabet Becomes Strange: Socrates - Avery Lake" />
+<meta name="twitter:description" content="Two 1/1 moving image studies by Avery Lake. Socrates rebuilt through binary, then squeezed back into the letters of his name." />
+<meta name="twitter:image" content="https://socrates.averylakeofficial.com/assets/social/when-the-alphabet-becomes-strange-socrates-og.jpg" />
+<meta name="twitter:image:alt" content="Socrates reconstructed through alphabetic marks in When the Alphabet Becomes Strange by Avery Lake." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #050606;
+    --bg-elev: #101314;
+    --fg: #eee9dd;
+    --fg-strong: #fff9ea;
+    --muted: #9a9588;
+    --hair: rgba(238, 233, 221, 0.14);
+    --hair-strong: rgba(238, 233, 221, 0.34);
+    --accent: #d9bc69;
+    --accent-2: #6ef5b5;
+    --accent-3: #48d7ff;
+    --paper: #f2eee3;
+    --void: #000;
+    --pad-x: clamp(20px, 5vw, 88px);
+    --grid-gap: clamp(16px, 2.5vw, 32px);
+    --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-mono: "Space Mono", ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+
+  html[data-theme="light"] {
+    --bg: #ffffff;
+    --bg-elev: #f6f5f1;
+    --fg: #131311;
+    --fg-strong: #000000;
+    --muted: #6c6962;
+    --hair: rgba(19, 19, 17, 0.12);
+    --hair-strong: rgba(19, 19, 17, 0.30);
+    --accent: #4d23a8;
+    --accent-2: #008b61;
+    --accent-3: #007aa5;
+    --paper: #ffffff;
+    --void: #000000;
+  }
+
+  * { box-sizing: border-box; }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    min-height: 100vh;
+    transition: background 260ms ease, color 260ms ease;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover { color: var(--accent); }
+
+  img,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 18px;
+    padding: 18px var(--pad-x);
+    background: color-mix(in oklab, var(--bg) 88%, transparent);
+    border-bottom: 1px solid var(--hair);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .brand {
+    color: var(--fg-strong);
+    font-weight: 700;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  .brand .by {
+    color: var(--muted);
+    font-weight: 400;
+    margin-left: 0.65em;
+  }
+
+  .topnav {
+    display: flex;
+    justify-content: center;
+    gap: 1.6em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .topnav a { color: var(--muted); }
+  .topnav a:hover { color: var(--fg-strong); }
+
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .theme-toggle {
+    appearance: none;
+    border: 1px solid var(--hair-strong);
+    background: transparent;
+    color: var(--fg);
+    cursor: pointer;
+    padding: 7px 10px;
+    font: inherit;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .theme-toggle:hover {
+    border-color: var(--fg-strong);
+    color: var(--fg-strong);
+  }
+
+  .hero {
+    min-height: calc(100vh - 58px);
+    padding: clamp(38px, 8vh, 86px) var(--pad-x) clamp(44px, 7vh, 78px);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: clamp(24px, 4vh, 34px);
+    border-bottom: 1px solid var(--hair);
+  }
+
+  /* Studies grid: two videos side by side */
+  .studies-grid {
+    display: flex;
+    gap: clamp(14px, 2.5vw, 28px);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 860px;
+  }
+
+  .work-stage {
+    flex: none;
+    position: relative;
+    background: var(--void);
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px var(--hair),
+      0 22px 70px -38px rgba(0, 0, 0, 0.95),
+      0 0 96px -54px rgba(217, 188, 105, 0.78),
+      0 0 160px -86px rgba(110, 245, 181, 0.55);
+  }
+
+  html[data-theme="light"] .work-stage {
+    box-shadow:
+      0 0 0 1px var(--hair),
+      0 26px 88px -48px rgba(19, 19, 17, 0.35),
+      0 0 86px -56px rgba(77, 35, 168, 0.38);
+  }
+
+  .work-stage[data-study="1"] {
+    height: min(52vh, 480px);
+    aspect-ratio: 4 / 5;
+  }
+
+  .work-stage[data-study="2"] {
+    height: min(52vh, 480px);
+    aspect-ratio: 4 / 5;
+  }
+
+  .work-stage video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: var(--void);
+  }
+
+  .stagebadge {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 4px 6px;
+    border: 1px solid var(--hair);
+    background: color-mix(in oklab, var(--bg) 72%, transparent);
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.52rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    pointer-events: none;
+    opacity: 0.78;
+  }
+
+  .hero-meta {
+    width: min(760px, 100%);
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 2;
+  }
+
+  .hero-meta .row {
+    display: block;
+  }
+
+  .hero-meta .name {
+    color: var(--fg-strong);
+    letter-spacing: 0.22em;
+    font-weight: 500;
+  }
+
+  .hero-meta .work {
+    color: var(--fg);
+  }
+
+  .hero-meta .edition {
+    color: var(--fg-strong);
+    margin-top: 0.5em;
+  }
+
+  h1.row {
+    margin: 0;
+    font: inherit;
+  }
+
+  .subtitle {
+    margin: 0 auto;
+    max-width: 68ch;
+    color: var(--fg);
+    font-size: 1.06rem;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+  }
+
+  .text-button {
+    border: 1px solid var(--hair-strong);
+    color: var(--fg-strong);
+    padding: 11px 14px;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    line-height: 1.25;
+    text-align: center;
+    text-transform: uppercase;
+    transition: border-color 160ms ease, color 160ms ease, background 160ms ease;
+  }
+
+  .text-button:hover {
+    border-color: var(--fg-strong);
+    background: var(--bg-elev);
+    color: var(--fg-strong);
+  }
+
+  .text-button.secondary {
+    color: var(--muted);
+  }
+
+  .inline-link {
+    color: var(--fg-strong);
+    border-bottom: 1px solid var(--hair-strong);
+  }
+
+  .inline-link:hover {
+    border-color: var(--accent);
+  }
+
+  .section {
+    padding: clamp(56px, 9vh, 116px) var(--pad-x);
+    border-bottom: 1px solid var(--hair);
+  }
+
+  .section-head,
+  .section-body {
+    display: grid;
+    grid-template-columns: minmax(110px, 1fr) 6fr;
+    gap: var(--grid-gap);
+  }
+
+  .section-head {
+    align-items: baseline;
+    margin-bottom: 34px;
+  }
+
+  .section-no {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    margin: 0;
+    color: var(--fg-strong);
+    font-size: 0.86rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .gutter {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    line-height: 1.8;
+    text-transform: uppercase;
+  }
+
+  .content {
+    max-width: 920px;
+  }
+
+  .editorial {
+    color: var(--fg);
+    font-size: 1.35rem;
+    line-height: 1.48;
+    font-weight: 300;
+  }
+
+  .editorial p {
+    margin: 0 0 1.15em;
+  }
+
+  .editorial p:last-child {
+    margin-bottom: 0;
+  }
+
+  .editorial em,
+  .em {
+    color: var(--fg-strong);
+    font-style: italic;
+  }
+
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--hair);
+    border: 1px solid var(--hair);
+  }
+
+  .data-item {
+    background: var(--bg);
+    padding: 20px;
+    min-height: 112px;
+  }
+
+  .data-item .k {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .data-item .v {
+    display: block;
+    color: var(--fg-strong);
+    font-size: 0.98rem;
+    line-height: 1.45;
+  }
+
+  .sequence-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--hair);
+    border: 1px solid var(--hair);
+    margin-top: 34px;
+  }
+
+  .sequence-frame {
+    background: var(--bg);
+    min-height: 190px;
+    padding: 20px;
+    display: grid;
+    align-content: space-between;
+    gap: 26px;
+  }
+
+  .sequence-frame .code {
+    color: var(--accent-2);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    line-height: 1.65;
+    word-break: break-word;
+  }
+
+  .sequence-frame:nth-child(2) .code { color: var(--accent); }
+  .sequence-frame:nth-child(3) .code { color: var(--accent-3); }
+
+  .sequence-frame .label {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  details.disclosure {
+    border-bottom: 1px solid var(--hair);
+  }
+
+  details.disclosure > summary {
+    list-style: none;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: minmax(110px, 1fr) 6fr auto;
+    gap: var(--grid-gap);
+    align-items: baseline;
+    padding: clamp(28px, 5vh, 46px) var(--pad-x);
+  }
+
+  details.disclosure > summary::-webkit-details-marker { display: none; }
+  details.disclosure > summary:hover { background: var(--bg-elev); }
+
+  details.disclosure .lede {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.55;
+    max-width: 68ch;
+  }
+
+  details.disclosure .lede strong {
+    display: block;
+    margin-bottom: 0.85em;
+    color: var(--fg-strong);
+    font-size: 0.86rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+
+  .marker {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  details.disclosure[open] .marker::before { content: "[ - ] close"; }
+  details.disclosure:not([open]) .marker::before { content: "[ + ] open"; }
+
+  details.disclosure .body {
+    padding: 0 var(--pad-x) clamp(48px, 7vh, 82px);
+    display: grid;
+    grid-template-columns: minmax(110px, 1fr) 6fr;
+    gap: var(--grid-gap);
+  }
+
+  .list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--hair-strong);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+  }
+
+  .list li {
+    display: grid;
+    grid-template-columns: 16ch 1fr;
+    gap: 18px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--hair);
+  }
+
+  .list .k {
+    color: var(--muted);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .list .v {
+    color: var(--fg);
+  }
+
+  .acquire {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: var(--grid-gap);
+    align-items: start;
+  }
+
+  .acquire-note {
+    border-top: 1px solid var(--hair-strong);
+    padding-top: 18px;
+    color: var(--fg);
+    font-size: 1.1rem;
+    line-height: 1.55;
+    font-weight: 300;
+  }
+
+  .acquire-actions {
+    display: grid;
+    gap: 12px;
+  }
+
+  footer.foot {
+    padding: clamp(42px, 7vh, 72px) var(--pad-x);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--grid-gap);
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    line-height: 1.7;
+    text-transform: uppercase;
+  }
+
+  footer.foot h5 {
+    margin: 0 0 12px;
+    color: var(--fg-strong);
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+  }
+
+  footer.foot ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+  }
+
+  footer.foot a {
+    color: var(--muted);
+  }
+
+  footer.foot a:hover {
+    color: var(--fg-strong);
+  }
+
+  .colophon {
+    max-width: 48ch;
+    text-transform: none;
+    letter-spacing: 0.02em;
+  }
+
+  .acknowledgement {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--hair);
+    padding-top: 20px;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+  }
+
+  @media (max-width: 980px) {
+    .topbar {
+      grid-template-columns: 1fr auto;
+    }
+
+    .topnav {
+      display: none;
+    }
+
+    .data-grid,
+    .sequence-strip,
+    .acquire {
+      grid-template-columns: 1fr;
+    }
+
+    footer.foot {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .topbar {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+    }
+
+    .brand .by {
+      display: block;
+      margin-left: 0;
+    }
+
+    .toolbar {
+      justify-content: center;
+    }
+
+    .hero {
+      min-height: auto;
+    }
+
+    .studies-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .work-stage[data-study="1"],
+    .work-stage[data-study="2"] {
+      height: auto;
+      width: min(78vw, 360px);
+      aspect-ratio: unset;
+    }
+
+    .work-stage[data-study="1"] { aspect-ratio: 4 / 5; }
+    .work-stage[data-study="2"] { aspect-ratio: 4 / 5; }
+
+    .section-head,
+    .section-body,
+    details.disclosure > summary,
+    details.disclosure .body {
+      grid-template-columns: 1fr;
+    }
+
+    details.disclosure > summary .marker {
+      order: -1;
+    }
+
+    .editorial {
+      font-size: 1.08rem;
+    }
+
+    .list li {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+
+    footer.foot {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "When the Alphabet Becomes Strange: Socrates",
+  "creator": {
+    "@type": "Person",
+    "name": "Avery Lake"
+  },
+  "dateCreated": "2026",
+  "artMedium": "MP4 loop, generative moving image",
+  "artform": "Digital moving image",
+  "description": "Two video studies. Socrates is reconstructed through binary and alphabet, then squeezed back into the symbols that name him.",
+  "url": "https://socrates.averylakeofficial.com/",
+  "image": "https://socrates.averylakeofficial.com/assets/social/when-the-alphabet-becomes-strange-socrates-og.jpg"
+}
+</script>
+</head>
+<body>
+
+<nav class="topbar" aria-label="Primary">
+  <div class="brand">
+    When the Alphabet Becomes Strange
+    <span class="by">/ Avery Lake</span>
+  </div>
+  <ul class="topnav">
+    <li><a href="#work">01 Work</a></li>
+    <li><a href="#statement">02 Statement</a></li>
+    <li><a href="#material">03 Material</a></li>
+    <li><a href="#lineage">04 Lineage</a></li>
+    <li><a href="#acquire">05 Acquire</a></li>
+  </ul>
+  <div class="toolbar">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light or dark theme">Light / Dark</button>
+  </div>
+</nav>
+
+<main>
+  <section class="hero" id="top" aria-label="Artwork">
+    <div class="studies-grid">
+      <div class="work-stage" data-study="1">
+        <video
+          src="assets/video/when-the-alphabet-becomes-strange-socrates-1.mp4"
+          poster="assets/images/when-the-alphabet-becomes-strange-socrates-cover.jpg"
+          autoplay
+          muted
+          loop
+          playsinline
+          controls
+          preload="metadata"
+          aria-label="When the Alphabet Becomes Strange: Socrates, Study 1, looping moving image by Avery Lake"
+        ></video>
+        <div class="stagebadge">Study 1</div>
+      </div>
+
+      <div class="work-stage" data-study="2">
+        <video
+          src="assets/video/when-the-alphabet-becomes-strange-socrates-2.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          controls
+          preload="metadata"
+          aria-label="When the Alphabet Becomes Strange: Socrates, Study 2 — The Squeeze, looping moving image by Avery Lake"
+        ></video>
+        <div class="stagebadge">Study 2</div>
+      </div>
+    </div>
+
+    <div class="hero-meta">
+      <span class="row name">Avery Lake</span>
+      <h1 class="row work">When the Alphabet Becomes Strange: Socrates, 2026</h1>
+      <span class="row">Two video studies / silent loops / 1 of 1 each</span>
+      <span class="row edition">Minted upon request</span>
+      <div class="hero-actions">
+        <a class="text-button" href="#acquire">Mint on request</a>
+        <a class="text-button secondary" href="https://signatures.averylakeofficial.com/" target="_blank" rel="noopener">Parent work</a>
+      </div>
+    </div>
+  </section>
+
+  <details class="disclosure" id="work" open>
+    <summary>
+      <div class="section-no">01</div>
+      <div class="lede">
+        <strong>The Work</strong>
+        Socrates left no written work of his own. These two studies rebuild and then collapse his face through the systems that preserve him, flatten him, and make him available to us.
+      </div>
+      <div class="marker"></div>
+    </summary>
+    <div class="body">
+      <div class="gutter">Two 1/1s<br />Moving image<br />2026</div>
+      <div class="content">
+        <div class="editorial">
+          <p>Socrates left no written work of his own. He reaches us through the alphabet he mistrusted.</p>
+          <p><em>Study 1</em> rebuilds his face through the systems that displaced him: binary rain coheres into his portrait; Greek letters emerge from the noise; phonetic residue of his name lingers before dissolving.</p>
+          <p><em>Study 2 — the Squeeze</em> inverts the gesture. His face is already present, fully formed, filling the frame. Then, slowly, particle by particle, it is pulled toward the eight Greek letters of his name: Σ Ω Κ Ρ Α Τ Η Σ. What remains is only the symbol.</p>
+          <p>Together they form a diptych: emergence and collapse. The face assembles from code; the face dissolves back into it. Socrates warned that the alphabet would flatten us. These studies make him prove it on himself.</p>
+        </div>
+
+        <div class="data-grid" aria-label="Artwork details">
+          <div class="data-item"><span class="k">Title</span><span class="v">When the Alphabet Becomes Strange: Socrates</span></div>
+          <div class="data-item"><span class="k">Artist</span><span class="v">Avery Lake</span></div>
+          <div class="data-item"><span class="k">Year</span><span class="v">2026</span></div>
+          <div class="data-item"><span class="k">Medium</span><span class="v">Generative moving image, two studies</span></div>
+          <div class="data-item"><span class="k">Format</span><span class="v">1440 × 1800 px, 4:5, two studies</span></div>
+          <div class="data-item"><span class="k">Edition</span><span class="v">Two unique works, 1 of 1 each, minted upon request</span></div>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details class="disclosure" id="statement" open>
+    <summary>
+      <div class="section-no">02</div>
+      <div class="lede">
+        <strong>Artist Statement</strong>
+        A focused moving study from the research field of <em>When the Alphabet Becomes Strange</em>, developed in relation to orality, writing, LLMs, and the inner life.
+      </div>
+      <div class="marker"></div>
+    </summary>
+    <div class="body">
+      <div class="gutter">Statement</div>
+      <div class="content">
+        <div class="editorial">
+          <p>The shift from orality to writing was not only a technological transition. It reorganized human experience.</p>
+          <p>Writing gave us record, distance, abstraction, and the capacity to think across time. It also made its own losses difficult to name, because the tradition that replaced orality became the water we swim in.</p>
+          <p>Socrates saw something real. In the <em>Phaedrus</em>, writing appears as a technology that can kill memory and presence, giving the appearance of wisdom without its living substance.</p>
+          <p>Large language models do not simply automate text production. They make the alphabetic tradition strange. A text is no longer only a fixed record. It becomes responsive, conversational, unstable.</p>
+          <p>The question is not whether AI will restore what writing diminished. The question is whether this disruption can make us conscious enough to choose what should not be delegated.</p>
+          <p>Socrates warned the alphabet could flatten us. Now the binary continues. Maybe that is the invitation: to remember what could never be captured.</p>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details class="disclosure" id="material">
+    <summary>
+      <div class="section-no">03</div>
+      <div class="lede">
+        <strong>Material Sequence</strong>
+        The face is not decorated by symbols. It is reconstructed and compressed by the medium itself, moving through binary, alphabetic marks, and phonetic fragments of the name Socrates.
+      </div>
+      <div class="marker"></div>
+    </summary>
+    <div class="body">
+      <div class="gutter">Study 1<br />Binary → Letters<br /><br />Study 2<br />Face → Letters</div>
+      <div class="content">
+        <ul class="list">
+          <li><span class="k">Binary</span><span class="v">01010011 01001111 01000011 01010010 01000001 01010100 01000101 01010011</span></li>
+          <li><span class="k">Letters</span><span class="v">SOCRATES / Σ Ω Κ Ρ Α Τ Η Σ</span></li>
+          <li><span class="k">Phonetics</span><span class="v">/s/ /o/ /k/ /r/ /a/ /t/ /e/ /s/</span></li>
+        </ul>
+
+        <div class="sequence-strip" aria-label="Three material translations of Socrates">
+          <div class="sequence-frame">
+            <div class="code">01010011<br />01001111<br />01000011<br />01010010<br />01000001<br />01010100<br />01000101<br />01010011</div>
+            <div class="label">Binary</div>
+          </div>
+          <div class="sequence-frame">
+            <div class="code">S O C R A T E S<br />Σ Ω Κ Ρ Α Τ Η Σ<br />SIGNS THAT REMEMBER</div>
+            <div class="label">Alphabet</div>
+          </div>
+          <div class="sequence-frame">
+            <div class="code">/s/ /o/ /k/ /r/<br />/a/ /t/ /e/ /s/<br />voice as residue</div>
+            <div class="label">Phonetics</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details class="disclosure" id="lineage">
+    <summary>
+      <div class="section-no">04</div>
+      <div class="lede">
+        <strong>Lineage</strong>
+        This work is adjacent to <a class="inline-link" href="https://signatures.averylakeofficial.com/" target="_blank" rel="noopener"><em>Signatures Through Technologies</em></a>, but it is not the same object. The fingerprint becomes a philosopher's face, and the chiasm becomes a question about language itself.
+      </div>
+      <div class="marker"></div>
+    </summary>
+    <div class="body">
+      <div class="gutter">Parent field<br />Companion study</div>
+      <div class="content">
+        <div class="editorial">
+          <p><a class="inline-link" href="https://signatures.averylakeofficial.com/" target="_blank" rel="noopener"><em>Signatures Through Technologies</em></a> maps the human signature across a 22-state chiasm: breath, trace, ink, print, code, prompt, light, interface, simulation, luminescence, and silence.</p>
+          <p>This Socrates work narrows the field. Instead of a fingerprint passing through technologies, the oral philosopher is reconstructed through the systems that displaced him, then collapsed back into the symbol that names him.</p>
+          <p>The result is not an answer. It is a disturbance: a face made from the very media that keep it at a distance, squeezed into eight letters, glitching at the end.</p>
+          <p>See also: <a class="inline-link" href="https://apple.averylakeofficial.com/" target="_blank" rel="noopener"><em>When the Alphabet Becomes Strange: Apple</em></a>, a companion study in which a red apple passes through binary and the alphabet before crumbling into silence.</p>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <section class="section" id="acquire">
+    <div class="section-head">
+      <div class="section-no">05</div>
+      <h2 class="section-title">Acquire</h2>
+    </div>
+    <div class="section-body">
+      <div class="gutter">Two 1/1s<br />Mint on request</div>
+      <div class="content acquire">
+        <div class="acquire-note">
+          <p>These works are available as two unique 1/1 digital artworks. They can be certified and minted upon request when there is a collector, institution, or specific reason to place them on chain.</p>
+          <p>No public sale price is currently listed.</p>
+        </div>
+        <div class="acquire-actions">
+          <a class="text-button" href="mailto:hello@averylakeofficial.com?subject=When%20the%20Alphabet%20Becomes%20Strange%3A%20Socrates">Inquire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="colophon">
+    <h5>Avery Lake</h5>
+    <p>Conceptual artist and ethicist working where language, breath, body, and machine intelligence meet.</p>
+  </div>
+  <div>
+    <h5>Work</h5>
+    <ul>
+      <li><a href="#top">Top</a></li>
+      <li><a href="assets/video/when-the-alphabet-becomes-strange-socrates-1.mp4">MP4 Study 1</a></li>
+      <li><a href="assets/video/when-the-alphabet-becomes-strange-socrates-2.mp4">MP4 Study 2</a></li>
+    </ul>
+  </div>
+  <div>
+    <h5>Lineage</h5>
+    <ul>
+      <li><a href="https://apple.averylakeofficial.com/" target="_blank" rel="noopener">Apple</a></li>
+      <li><a href="https://signatures.averylakeofficial.com/" target="_blank" rel="noopener">Signatures</a></li>
+      <li><a href="https://averylakeofficial.com/" target="_blank" rel="noopener">Avery Lake</a></li>
+      <li><a href="https://averylakeofficial.substack.com/" target="_blank" rel="noopener">Writing</a></li>
+    </ul>
+  </div>
+  <div>
+    <h5>Studio</h5>
+    <ul>
+      <li><a href="mailto:hello@averylakeofficial.com">Email</a></li>
+      <li><a href="https://www.instagram.com/averylakeofficial/" target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
+  </div>
+  <div class="acknowledgement">
+    With gratitude, The Art of Avery Lake acknowledges practicing on Stó:lō Tém:éxw, in the unceded Stó:lō territory of the Máthxwi First Nation and the Semá:th First Nation. © 2026 The Art of Avery Lake
+  </div>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  const toggle = document.getElementById("themeToggle");
+  const stored = localStorage.getItem("socrates-theme");
+  if (stored === "light" || stored === "dark") {
+    root.dataset.theme = stored;
+  }
+  toggle.addEventListener("click", () => {
+    const next = root.dataset.theme === "dark" ? "light" : "dark";
+    root.dataset.theme = next;
+    localStorage.setItem("socrates-theme", next);
+  });
+</script>
+</body>
+</html>
